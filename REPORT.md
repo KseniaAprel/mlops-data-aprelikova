@@ -55,3 +55,35 @@
 - Клон: `mlops-data-clone`, `dvc pull` восстановил оба CSV
 - SHA-256 в клоне совпадают: iris `3e1ba63f...`, wine `38860ba0...`
 - Восстановление не зависит от старого локального cache ✓
+
+### ClearML Datasets
+
+**Базовый Dataset 1.0.0:**
+- BASE_ID: `b776397a5fb642fcb2895ae897449091`
+- Содержимое: `['iris.csv']`
+- Статус: Completed (финализирован)
+- Тег: `base`
+
+**Дочерняя версия 1.1.0 (Wine):**
+- WINE_ID: `b98b2f92d7ac4ac8a462cda305e6256c`
+- Parent: `b776397a5fb642fcb2895ae897449091` (BASE_ID)
+- All files: `['iris.csv', 'wine.csv']`
+- Added files: `['wine.csv']`
+
+**Отдельная ветвь 2.0.0 (iris_features):**
+- IRIS_FEATURES_ID: `776a29a536d348d6aeb36546ca1c3e8b`
+- Parent: `b776397a5fb642fcb2895ae897449091` (BASE_ID, не WINE_ID)
+- All files: `['iris.csv']`
+- Modified files: `['iris.csv']`
+
+### Скачанные версии ClearML
+
+| Version | Dataset ID | Files | SHA-256 | Shape |
+|---|---|---|---|---|
+| 1.0.0 | b776397a5fb642fcb2895ae897449091 | iris.csv | 6d700503... | (150, 5) |
+| 1.1.0 | b98b2f92d7ac4ac8a462cda305e6256c | iris.csv | 6d700503... | (150, 5) |
+| 1.1.0 | b98b2f92d7ac4ac8a462cda305e6256c | wine.csv | 38860ba0... | (178, 14) |
+| 2.0.0 | 776a29a536d348d6aeb36546ca1c3e8b | iris.csv | 3e1ba63f... | (150, 7) |
+
+**WINE_SHA256:** `38860ba04ace4d402242340bcf40be4bd6f4ebde9144a3dc89dc12c20f7f8e60`
+Совпадение DVC и ClearML: ✅
