@@ -32,11 +32,11 @@ def main():
     iris_df = check_file(iris_path, expected_rows=150)
     if "sepal_area" in iris_df.columns:
         expected_sepal = iris_df["sepal length (cm)"] * iris_df["sepal width (cm)"]
-        if not (iris_df["sepal_area"] == expected_sepal).all():
+        if not (abs(iris_df["sepal_area"] - expected_sepal) < 1e-6).all():
             raise ValueError("sepal_area incorrect")
     if "petal_area" in iris_df.columns:
         expected_petal = iris_df["petal length (cm)"] * iris_df["petal width (cm)"]
-        if not (iris_df["petal_area"] == expected_petal).all():
+        if not (abs(iris_df["petal_area"] - expected_petal) < 1e-6).all():
             raise ValueError("petal_area incorrect")
 
     if wine_path.exists():
