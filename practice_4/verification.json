@@ -1,0 +1,17 @@
+{
+    "status": "passed",
+    "best_run_id": "78d2c24d82d54e2082718b07ad334a07",
+    "model_uri": "runs:/78d2c24d82d54e2082718b07ad334a07/model",
+    "dataset_id": "b98b2f92d7ac4ac8a462cda305e6256c",
+    "dataset_sha256": "38860ba04ace4d402242340bcf40be4bd6f4ebde9144a3dc89dc12c20f7f8e60",
+    "signature_valid": true,
+    "prediction_parity": true,
+    "required_params_valid": true,
+    "required_metrics_valid": true,
+    "test_metrics": {
+        "accuracy": 0.9444444444444444,
+        "precision_weighted": 0.9444444444444444,
+        "recall_weighted": 0.9444444444444444,
+        "f1_weighted": 0.9444444444444444
+    }
+}

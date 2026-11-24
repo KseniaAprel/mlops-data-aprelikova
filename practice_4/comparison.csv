@@ -1,0 +1,7 @@
+run_id,model_family,run_name,validation_f1,training_time,model_type,C,n_estimators,max_depth
+78d2c24d82d54e2082718b07ad334a07,RandomForest,random_forest_1,0.9723691945914168,0.07667059999948833,RandomForest,,100.0,
+4cd9e30ee5ff418c9e718658798baa39,RandomForest,random_forest_3,0.9448329448329448,0.12761719999252819,RandomForest,,200.0,
+a7e254dedd0c4d6f918983816bca1436,RandomForest,random_forest_2,0.9448329448329448,0.12211470000329427,RandomForest,,200.0,5.0
+dbc74d110468478998dfb3b959cf47d4,LogisticRegression,logistic_regression_C_1.0,0.9435246235246235,0.007434200000716373,LogisticRegression,1.0,,
+d7bd477d354643ff9e82ffeabe6053b4,LogisticRegression,logistic_regression_C_0.1,0.9435246235246235,0.008873500002664514,LogisticRegression,0.1,,
+a6f8a2b478f24926af912d82cd1124b2,LogisticRegression,logistic_regression_C_10.0,0.9147474747474748,0.0049556000012671575,LogisticRegression,10.0,,

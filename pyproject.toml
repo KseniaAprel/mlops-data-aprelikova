@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mlops-data-aprelikova"
+version = "0.1.0"
+description = "MLOps practices 3 and 4"
+authors = ["Ksenia Aprelikova"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+dvc = ">=3.67,<4"
+clearml = ">=2.2,<3"
+mlflow = ">=3.0,<4"
+joblib = ">=1.4,<2"
+matplotlib = ">=3.9,<4"
+pandas = ">=2.2,<4"
+scikit-learn = ">=1.5,<2"
+ipykernel = ">=6.29,<8"
+nbclient = ">=0.10,<1"
+nbformat = ">=5.10,<6"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
